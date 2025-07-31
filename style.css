@@ -597,71 +597,6 @@ footer {
   transform: scale(1.5);
 }
 
-/* @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
-    }
-    .links-start, .links-end {
-        flex-direction: column;
-        width: 100%;
-        align-items: flex-start;
-    }
-    .text {
-        padding: 20px;
-        text-align: center;
-    }
-
-       .features {
-        flex-direction: column;
-        padding: 20px;
-    }
-    .box {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .main {
-        flex-direction: column;
-        padding: 20px;
-    }
-    .hero-text {
-        text-align: center;
-    }
-
-       .products {
-        width: 100%;
-        max-width: none;
-        margin-bottom: 20px;
-    }
-    .clients, .team {
-        flex-direction: column;
-        align-items: center;
-    }
-    .container, .container-2 {
-        padding: 20px;
-    }
-    .contentLast {
-        padding: 20px;
-        text-align: center;
-    }
-
-        .input-container {
-        flex-direction: column;
-        width: 100%;
-    }
-    .input-container input {
-        margin-bottom: 10px;
-    }
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .social-icons {
-        margin-top: 10px;
-    }
-} */
-
 /* === Mobile Responsiveness === */
 
 @media (max-width: 768px) {
@@ -850,5 +785,32 @@ footer {
 
   .input-container {
     height: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    height: auto; /* allow height to grow */
+    padding: 10px 20px;
+  }
+
+  .logo {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+
+  .links-start,
+  .links-end {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  .links-start a,
+  .links-end a {
+    margin: 8px 15px; /* space out links nicely */
   }
 }
